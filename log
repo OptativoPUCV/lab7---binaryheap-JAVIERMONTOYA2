@@ -70,3 +70,15 @@ heap.c:43:37: error: ‘heap’ undeclared (first use in this function); did you
 heap.c:43:37: note: each undeclared identifier is reported only once for each function it appears in
 Compilation failed
 ec0ad4f
+Thu 12 Oct 2023 06:31:05 PM UTC: 
+ heap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:4:
+heap.c: In function ‘createHeap’:
+heap.c:43:37: error: ‘heap’ undeclared (first use in this function); did you mean ‘Heap’?
+   43 |   monticulo->heapArray=(int*)malloc(heap->capac*sizeof(int));
+      |                                     ^~~~
+      |                                     Heap
+heap.c:43:37: note: each undeclared identifier is reported only once for each function it appears in
+Compilation failed
+6350f93
