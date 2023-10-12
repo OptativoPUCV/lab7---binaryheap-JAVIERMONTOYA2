@@ -76,7 +76,12 @@ void heap_pop(Heap* pq){
     if (hijoDer <= ultimo && pq->heapArray[hijoDer].priority < pq->heapArray[hijoIzq].priority){
       hijo = hijoDer;
     }
-    
+    if (pq->heapArray[indice].priority < pq->heapArray[hijo].priority){
+      break;
+    }else{
+      heapElem temp = pq->heapArray[indice];
+      pq->heapArray[indice] = pq->heapArray[hijo];
+    }
   }
 }
 
