@@ -58,7 +58,7 @@ void heap_push(Heap* pq, void* data, int priority){
 void heap_pop(Heap* pq){
   if(pq==NULL || pq->size==0){
     printf("Error al crear el monticulo\n");
-    return
+    return;
   }
 
   pq->heapArray[0]=pq->heapArray[pq->size-1];
