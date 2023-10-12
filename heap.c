@@ -33,6 +33,7 @@ void heap_pop(Heap* pq){
 }
 
 Heap* createHeap(){
-
-   return NULL;
+  Heap* monticulo = (Heap*)malloc(sizeof(Heap));
+  
+  return NULL;
 }
