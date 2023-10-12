@@ -38,5 +38,8 @@ Heap* createHeap(){
     printf("Error al crear el monticulo\n");
     return NULL;
   }
+  monticulo->size=0;
+  monticulo->capac=3;
+  
   return monticulo;
 }
