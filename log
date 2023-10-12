@@ -116,3 +116,9 @@ heap.c:43:23: error: assignment to ‘heapElem *’ {aka ‘struct nodo *’} fr
 cc1: all warnings being treated as errors
 Compilation failed
 5632541
+Thu 12 Oct 2023 06:33:38 PM UTC: 
+ heap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  1|3
+total_score: 10/70
+30f729e
