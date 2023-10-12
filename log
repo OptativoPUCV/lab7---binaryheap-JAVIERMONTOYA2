@@ -157,3 +157,9 @@ heap.c:46:3: error: implicit declaration of function ‘siftUp’ [-Werror=impli
 cc1: all warnings being treated as errors
 Compilation failed
 cb199f9
+Thu 12 Oct 2023 06:42:02 PM UTC: 
+ heap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  3|2
+total_score: 25/70
+4617c1e
