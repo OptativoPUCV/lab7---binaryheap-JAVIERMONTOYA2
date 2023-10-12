@@ -34,6 +34,9 @@ void heap_pop(Heap* pq){
 
 Heap* createHeap(){
   Heap* monticulo = (Heap*)malloc(sizeof(Heap));
+  if(monticulo == NULL){
+    printf("Error al crear el monticulo\n");
+    return NULL;
+  }
   
-  return NULL;
 }
