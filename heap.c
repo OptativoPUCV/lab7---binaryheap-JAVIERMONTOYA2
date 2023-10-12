@@ -40,6 +40,10 @@ void heap_push(Heap* pq, void* data, int priority){
       return;
     }
   }
+  pq->heapArray[pq->size].data=data;
+  pq->heapArray[pq->size].priority=priority;
+  pq->size++;
+  siftUp(pq,pq->size-1);
 }
 
 
