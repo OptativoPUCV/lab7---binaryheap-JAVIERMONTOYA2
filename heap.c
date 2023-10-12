@@ -40,7 +40,7 @@ Heap* createHeap(){
   }
   monticulo->size=0;
   monticulo->capac=3;
-  monticulo->heapArray=(int*)malloc(monticulo->capac*sizeof(int));
+  monticulo->heapArray=(int*)malloc(heap->capac*sizeof(int));
   if(monticulo->heapArray==NULL){
     printf("Error al crear el monticulo\n");
     return NULL;
