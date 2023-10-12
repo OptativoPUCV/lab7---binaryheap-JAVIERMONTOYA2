@@ -163,3 +163,14 @@ Thu 12 Oct 2023 06:42:02 PM UTC:
  tests:  3|2
 total_score: 25/70
 4617c1e
+Thu 12 Oct 2023 08:03:57 PM UTC: 
+ heap.c | 5 +++++
+ 1 file changed, 5 insertions(+)
+In file included from test.c:4:
+heap.c: In function ‘heap_push’:
+heap.c:49:14: error: unused variable ‘temp’ [-Werror=unused-variable]
+   49 |     heapElem temp = pq->heapArray[indice];
+      |              ^~~~
+cc1: all warnings being treated as errors
+Compilation failed
+4365185
