@@ -81,6 +81,8 @@ void heap_pop(Heap* pq){
     }else{
       heapElem temp = pq->heapArray[indice];
       pq->heapArray[indice] = pq->heapArray[hijo];
+      pq->heapArray[hijo] = temp;
+      indice = hijo;
     }
   }
 }
