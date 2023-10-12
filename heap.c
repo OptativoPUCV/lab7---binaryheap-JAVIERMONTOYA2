@@ -38,5 +38,5 @@ Heap* createHeap(){
     printf("Error al crear el monticulo\n");
     return NULL;
   }
-  
+  return monticulo;
 }
