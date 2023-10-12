@@ -61,7 +61,8 @@ void heap_pop(Heap* pq){
     return;
   }
 
-  free(pq->heapArray[0]); pq->heapArray[0]=pq->heapArray[pq->size-1];
+  free(pq->heapArray[0]); 
+  pq->heapArray[0]=pq->heapArray[pq->size-1];
 
   pq->size--;
 
