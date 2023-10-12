@@ -18,6 +18,10 @@ typedef struct Heap{
 
 
 void* heap_top(Heap* pq){
+  if(pq==NULL || pq->size ==0){
+    printf("Error: El monticulo esta vacio\n");
+    return NULL;
+  }
   return pq->heapArray[0].data;
 }
 
