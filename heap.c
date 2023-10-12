@@ -40,6 +40,6 @@ Heap* createHeap(){
   }
   monticulo->size=0;
   monticulo->capac=3;
-  
+  monticulo->heapArray=(int*)malloc(sizeof(int));
   return monticulo;
 }

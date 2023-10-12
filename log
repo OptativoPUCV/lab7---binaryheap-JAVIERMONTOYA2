@@ -35,3 +35,14 @@ Thu 12 Oct 2023 06:29:19 PM UTC:
  1 file changed, 3 insertions(+)
  tests:  0|0
 8b057ea
+Thu 12 Oct 2023 06:29:52 PM UTC: 
+ heap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:4:
+heap.c: In function ‘createHeap’:
+heap.c:43:23: error: assignment to ‘heapElem *’ {aka ‘struct nodo *’} from incompatible pointer type ‘int *’ [-Werror=incompatible-pointer-types]
+   43 |   monticulo->heapArray=(int*)malloc(sizeof(int));
+      |                       ^
+cc1: all warnings being treated as errors
+Compilation failed
+21a7bcd
